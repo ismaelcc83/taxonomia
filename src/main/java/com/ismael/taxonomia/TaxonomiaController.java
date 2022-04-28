@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TaxonomicController {
+public class TaxonomiaController {
 
     private static final String template = "La taxonomia de %s es %s";
     private final AtomicLong counter = new AtomicLong();
