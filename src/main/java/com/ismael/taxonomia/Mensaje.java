@@ -1,11 +1,11 @@
 package com.ismael.taxonomia;
 
-public class Message {
+public class Mensaje {
 
     private final long consultaId;
     private final String contenido;
 
-    public Message(long consultaId, String contenido) {
+    public Mensaje(long consultaId, String contenido) {
 	this.consultaId = consultaId;
 	this.contenido = contenido;
     }
