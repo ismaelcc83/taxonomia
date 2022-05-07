@@ -1,4 +1,4 @@
-package com.ismael.taxonomia;
+package com.ismael.taxonomia.controller;
 
 public class Mensaje {
 
