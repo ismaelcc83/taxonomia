@@ -1,4 +1,4 @@
-package com.ismael.taxonomia;
+package com.ismael.taxonomia.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +21,13 @@ public class Grafo {
     @Override
     public String toString() {
 	return "Grafo [nodos=" + nodos + "]";
+    }
+
+    public void addGrafo(Grafo g) {
+	if (g.nodos == null) {
+	    g.nodos = new ArrayList<>();
+	}
+	nodos.addAll(g.nodos);
     }
 
 }
