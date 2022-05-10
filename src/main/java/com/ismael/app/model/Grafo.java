@@ -1,4 +1,4 @@
-package com.ismael.taxonomia.model;
+package com.ismael.app.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +28,27 @@ public class Grafo {
 	    g.nodos = new ArrayList<>();
 	}
 	nodos.addAll(g.nodos);
+    }
+
+    public Nodo findByName(String s) {
+	for (Nodo n : nodos) {
+	    if (s.equals(n.getNomenclatura())) {
+		return n;
+	    }
+	}
+	return null;
+
+    }
+
+    public String getPath(Nodo n) {
+	String s = "";
+	for (int i = 0; i < nodos.size(); i++) {
+	    if (n.getNomenclatura().equals(nodos.get(i).getNomenclatura())) {
+		s = getPath(findByName(n.getNodoPadre())) + " > " + n.getNomenclatura();
+	    }
+	}
+	return s;
+
     }
 
 }

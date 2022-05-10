@@ -1,4 +1,4 @@
-package com.ismael.taxonomia.model;
+package com.ismael.app.model;
 
 public class Nodo {
     private String nomenclatura;

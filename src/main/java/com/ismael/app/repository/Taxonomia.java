@@ -1,9 +1,9 @@
-package com.ismael.taxonomia.repository;
+package com.ismael.app.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.ismael.taxonomia.model.Grafo;
-import com.ismael.taxonomia.model.Nodo;
+import com.ismael.app.model.Grafo;
+import com.ismael.app.model.Nodo;
 
 @Repository
 public class Taxonomia {
