@@ -1,9 +1,9 @@
-package com.ismael.taxonomia.repository;
+package com.ismael.app.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.ismael.taxonomia.model.Grafo;
-import com.ismael.taxonomia.model.Nodo;
+import com.ismael.app.model.Grafo;
+import com.ismael.app.model.Nodo;
 
 @Repository
 public class Cytota {
@@ -107,13 +107,20 @@ public class Cytota {
 	Nodo n;
 	n = new Nodo("Palaeococcus", "Genero", "Thermococcaceae");
 	g.addNode(n);
-	generarGrafoThermococcaceae();
+	generarGrafoPalaeococcus();
 	n = new Nodo("Pyrococcus", "Genero", "Thermococcaceae");
 	g.addNode(n);
 	generarGrafoPyrococcus();
 	n = new Nodo("Thermococcus", "Genero", "Thermococcaceae");
 	g.addNode(n);
 	generarGrafoThermococcus();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Pyrococcus
+    private void generarGrafoPalaeococcus() {
+	Nodo n;
+	n = new Nodo("Palaeococcus ferrophilus", "Especie", "Palaeococcus");
+	g.addNode(n);
     }
 
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Pyrococcus

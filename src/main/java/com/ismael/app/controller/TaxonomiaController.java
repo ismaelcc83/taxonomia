@@ -1,4 +1,4 @@
-package com.ismael.taxonomia.controller;
+package com.ismael.app.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 //import java.util.logging.Level;
@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ismael.taxonomia.model.Grafo;
-import com.ismael.taxonomia.repository.Taxonomia;
+import com.ismael.app.model.Grafo;
+import com.ismael.app.model.Nodo;
+import com.ismael.app.repository.Taxonomia;
 
 @RestController
 public class TaxonomiaController {
@@ -19,7 +20,7 @@ public class TaxonomiaController {
     private final AtomicLong contadorConsultas = new AtomicLong();
 
     @GetMapping("/taxonomia")
-    public Mensaje taxonomia(@RequestParam(value = "nombre", defaultValue = "Homo sapiens sapiens") String nombre) {
+    public Mensaje taxonomia(@RequestParam(value = "nombre", defaultValue = "Biota") String nombre) {
 
 	Taxonomia t = new Taxonomia();
 	Grafo g;
@@ -28,13 +29,12 @@ public class TaxonomiaController {
 	try {
 	    t.generarGrafoTaxonomico();
 	    g = t.getGrafo();
-
-	    // Nodo n = g.findByName(nombre);
-	    // if(n!=null && n!=""){
-	    // taxonomia = g.getPath(n);
-	    // else{
-	    // taxonomia = "Error: No existe.";
-	    // }
+	    Nodo n = g.findByName(nombre);
+	    if (n != null) {
+		ruta = g.getPath(n);
+	    } else {
+		ruta = "Error: No existe.";
+	    }
 	} catch (Exception e) {
 	    // LOGGER.log(Level.SEVERE, "ERROR GENERANDO EL MENSAJE");
 	    System.out.println("Error generando el mensaje.");
