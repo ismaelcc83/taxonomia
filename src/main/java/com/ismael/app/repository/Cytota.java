@@ -604,14 +604,91 @@ public class Cytota {
 
     // CYTOTA>Archaea>Euryarchaeota>Halobacteriota
     private void generarGrafoHalobacteriota() {
-	// Archaeoglobi
-	// Haloarchaea
-	// Methanomicrobia
-	// Methanocellia
-	// Methanoliparia
-	// Methanosarcinia
-	// Methanonatronarchaeia
-	// Syntropharchaeia
+	Nodo n;
+	n = new Nodo("Archaeoglobi", "Clase", "Halobacteriota");
+	g.addNode(n);
+	generarGrafoArchaeoglobi();
+	n = new Nodo("Haloarchaea", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoHaloarchaea();
+	n = new Nodo("Methanomicrobia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoMethanomicrobia();
+	n = new Nodo("Methanocellia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoMethanocellia();
+	n = new Nodo("Methanoliparia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoMethanoliparia();
+	n = new Nodo("Methanosarcinia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoMethanosarcinia();
+	n = new Nodo("Methanonatronarchaeia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoMethanonatronarchaeia();
+	n = new Nodo("Syntropharchaeia", "Clase", "Halobacteriota");
+	g.addNode(n);
+	// TODO generarGrafoSyntropharchaeia();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi
+    private void generarGrafoArchaeoglobi() {
+	Nodo n;
+	n = new Nodo("Archaeoglobales", "Orden", "Archaeoglobi");
+	g.addNode(n);
+	generarGrafoArchaeoglobales();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi>Archaeoglobales
+    private void generarGrafoArchaeoglobales() {
+	Nodo n;
+	n = new Nodo("Archaeoglobaceae", "Familia", "Archaeoglobales");
+	g.addNode(n);
+	generarGrafoArchaeoglobaceae();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi>Archaeoglobales>Archaeoglobaceae
+    private void generarGrafoArchaeoglobaceae() {
+	Nodo n;
+	n = new Nodo("Archaeoglobus", "Genero", "Archaeoglobaceae");
+	g.addNode(n);
+	generarGrafoArchaeoglobus();
+	n = new Nodo("Ferroglobus", "Genero", "Archaeoglobaceae");
+	g.addNode(n);
+	generarGrafoFerroglobus();
+	n = new Nodo("Geoglobus", "Genero", "Archaeoglobaceae");
+	g.addNode(n);
+	generarGrafoGeoglobus();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi>Archaeoglobales>Archaeoglobaceae>Archaeoglobus
+    private void generarGrafoArchaeoglobus() {
+	Nodo n;
+	n = new Nodo("Archaeoglobus fulgidus", "Especie", "Archaeoglobus");
+	g.addNode(n);
+	n = new Nodo("Archaeoglobus profundus", "Especie", "Archaeoglobus");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi>Archaeoglobales>Archaeoglobaceae>Ferroglobus
+    private void generarGrafoFerroglobus() {
+	Nodo n;
+	n = new Nodo("Ferroglobus placidus", "Especie", "Ferroglobus");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi>Archaeoglobales>Archaeoglobaceae>Geoglobus
+    private void generarGrafoGeoglobus() {
+	Nodo n;
+	n = new Nodo("Geoglobus ahangari", "Especie", "Geoglobus");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea
+    private void generarGrafoHaloarchaea() {
+	Nodo n;
+	n = new Nodo("", "", "Haloarchaea");
+	g.addNode(n);
     }
 
     // CYTOTA>Archaea>Proteoarchaeota
