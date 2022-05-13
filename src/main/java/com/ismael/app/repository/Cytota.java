@@ -610,7 +610,7 @@ public class Cytota {
 	generarGrafoArchaeoglobi();
 	n = new Nodo("Haloarchaea", "Clase", "Halobacteriota");
 	g.addNode(n);
-	// TODO generarGrafoHaloarchaea();
+	generarGrafoHaloarchaea();
 	n = new Nodo("Methanomicrobia", "Clase", "Halobacteriota");
 	g.addNode(n);
 	// TODO generarGrafoMethanomicrobia();
@@ -687,7 +687,203 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Haloarchaea
     private void generarGrafoHaloarchaea() {
 	Nodo n;
-	n = new Nodo("", "", "Haloarchaea");
+	n = new Nodo("Halobacteriales", "Orden", "Haloarchaea");
+	g.addNode(n);
+	generarGrafoHalobacteriales();
+	n = new Nodo("Haloferacales", "Orden", "Haloarchaea");
+	g.addNode(n);
+	generarGrafoHaloferacales();
+	n = new Nodo("Natrialbales", "Orden", "Haloarchaea");
+	g.addNode(n);
+	generarGrafoNatrialbales();
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales
+    private void generarGrafoHalobacteriales() {
+	Nodo n;
+	n = new Nodo("Halobacteriales", "Familia", "Halobacteriales");
+	g.addNode(n);
+	n = new Nodo("Halobacteriaceae", "Familia", "Halobacteriales");
+	g.addNode(n);
+	generarGrafoHalobacteriaceae();
+	n = new Nodo("Halococcaceae", "Familia", "Halobacteriales");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Haloferacales
+    private void generarGrafoHaloferacales() {
+	Nodo n;
+	n = new Nodo("Haloferacaceae", "Familia", "Haloferacales");
+	g.addNode(n);
+	n = new Nodo("Halorubraceae", "Familia", "Haloferacales");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Natrialbales
+    private void generarGrafoNatrialbales() {
+	Nodo n;
+	n = new Nodo("Natrialbaceae", "Familia", "Natrialbales");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales>Halobacteriaceae
+    private void generarGrafoHalobacteriaceae() {
+	Nodo n;
+	n = new Nodo("Haladaptatus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halalkalicoccus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halarchaeum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Haloalcalophilium", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Haloarcula", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halobacterium", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	generarGrafoHalobacterium();
+	n = new Nodo("Halobaculum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halobellus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halobiforma", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halococcus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	generarGrafoHalococcus();
+	n = new Nodo("Haloferax", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halogeometricum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halogranum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halolamina", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halomarina", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halomicrobium", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halonotius", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halopelagius", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halopiger", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Haloplanus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Haloquadratum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	generarGrafoHaloquadratum();
+	n = new Nodo("Halorhabdus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halorientalis", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halorubrum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halorussus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halosarcina", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halosimplex", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halostagnicola", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Haloterrigena", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Halovivax", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	generarGrafoHalovivax();
+	n = new Nodo("Natrialba", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natrinema", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronoarchaeum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronobacterium", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronococcus", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronolimnobius", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronomonas", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Natronorubrum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+	n = new Nodo("Salarchaeum", "Genero", "Halobacteriaceae");
+	g.addNode(n);
+
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales>Halobacteriaceae>Halobacterium
+    private void generarGrafoHalobacterium() {
+	Nodo n;
+	n = new Nodo("Halobacterium cutirubrum", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium denitrificans", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium distributum", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium halobium", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium lacusprofundi", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium mediterranei", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium noricense", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium pharaonis", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium saccharovorum", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium salinarum", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium sodomense", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium trapanicum", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium vallismortis", "Especie", "Halobacterium");
+	g.addNode(n);
+	n = new Nodo("Halobacterium volcanii", "Especie", "Halobacterium");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales>Halobacteriaceae>Halococcus
+    private void generarGrafoHalococcus() {
+	Nodo n;
+	n = new Nodo("Halococcus dombrowskii", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus hamelinii", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus morrhuae", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus qingdaogense", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus saccharolyticus", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus salifodinae", "Especie", "Halococcus");
+	g.addNode(n);
+	n = new Nodo("Halococcus thailandensis", "Especie", "Halococcus");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales>Halobacteriaceae>Haloquadratum
+    private void generarGrafoHaloquadratum() {
+	Nodo n;
+	n = new Nodo("Haloquadratum walsbyi", "Especie", "Haloquadratum");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Haloarchaea>Halobacteriales>Halobacteriaceae>Halovivax
+    private void generarGrafoHalovivax() {
+	Nodo n;
+	n = new Nodo("Halovivax ", "Especie", "Halovivax");
+	g.addNode(n);
+    }
+
+    // CYTOTA>Archaea>Euryarchaeota>Methanomicrobia
+    private void generarGrafoMethanomicrobia() {
+	Nodo n;
+	n = new Nodo("", "", "Methanomicrobia");
 	g.addNode(n);
     }
 
