@@ -1,7 +1,12 @@
 package com.ismael.app.repository;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 
+import com.ismael.app.model.Constants;
 import com.ismael.app.model.Grafo;
 import com.ismael.app.model.Nodo;
 
@@ -10,79 +15,23 @@ public class Cytota {
 
     private Grafo g;
 
-    public Grafo generarGrafo() {
+    public Grafo generarGrafo(List<String> names, int categoria, String padre) {
 	g = new Grafo();
 	Nodo n;
-	n = new Nodo("Archaea", "Dominio", "Cytota");
-	g.addNode(n);
-	generarGrafoArchaea();
-	n = new Nodo("Bacteria", "Dominio", "Cytota");
-	g.addNode(n);
-	generarGrafoBacteria();
-	n = new Nodo("Eukaryota", "Dominio", "Cytota");
-	g.addNode(n);
-	generarGrafoEukaryota();
-	n = new Nodo("Protobionte", "Dominio", "Cytota");
-	g.addNode(n);
-	generarGrafoProtobionte();
+	for (String name : names) {
+	    n = new Nodo(name, categoria, padre);
+	    g.addNode(n);
+	    List<String> listaDelNodo = new ArrayList<String>();
+	    listaDelNodo.addAll(Arrays.asList(Constants.getList(name)));
+	    g.addGrafo(generarGrafo(listaDelNodo, categoria + 1, name));
+	}
 	return g;
     }
 
     // CYTOTA>Archaea
-    // ==============
-    private void generarGrafoArchaea() {
-	Nodo n;
-	n = new Nodo("DPANN", "Supergrupo", "Archaea");
-	g.addNode(n);
-	generarGrafoDPANN();
-	n = new Nodo("Euryarchaeotan", "Filo", "Archaea");
-	g.addNode(n);
-	generarGrafoEuryarchaeota();
-	n = new Nodo("Proteoarchaeota", "Reino", "Archaea");
-	g.addNode(n);
-	generarGrafoProteoarchaeota();
-    }
-
     // CYTOTA>Archaea>DPANN
-    private void generarGrafoDPANN() {
-	//
-    }
-
     // CYTOTA>Archaea>Euryarchaeota
-    private void generarGrafoEuryarchaeota() {
-	Nodo n;
-	n = new Nodo("Hydrothermarchaeota", "Clase", "Euryarchaeotan");
-	g.addNode(n);
-	n = new Nodo("Hadesarchaea", "Clase", "Euryarchaeotan");
-	g.addNode(n);
-	n = new Nodo("Methanobacteriota", "Grupo", "Euryarchaeotan");
-	g.addNode(n);
-	generarGrafoMethanobacteriota();
-	n = new Nodo("Thermoplasmatota", "Grupo", "Euryarchaeotan");
-	g.addNode(n);
-	generarGrafoThermoplasmatota();
-	n = new Nodo("Halobacteriota", "Grupo", "Euryarchaeotan");
-	g.addNode(n);
-	generarGrafoHalobacteriota();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota
-    private void generarGrafoMethanobacteriota() {
-	Nodo n;
-	n = new Nodo("Thermococci", "Clase", "Methanobacteriota");
-	g.addNode(n);
-	generarGrafoThermococci();
-	n = new Nodo("Methanopyri", "Clase", "Methanobacteriota");
-	g.addNode(n);
-	generarGrafoMethanopyri();
-	n = new Nodo("Methanococci", "Clase", "Methanobacteriota");
-	g.addNode(n);
-	generarGrafoMethanococci();
-	n = new Nodo("Methanobacteria", "Clase", "Methanobacteriota");
-	g.addNode(n);
-	generarGrafoMethanobacteria();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci
     private void generarGrafoThermococci() {
 	Nodo n;
@@ -489,16 +438,6 @@ public class Cytota {
 	g.addNode(n);
     }
 
-    // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota
-    private void generarGrafoThermoplasmatota() {
-	Nodo n;
-	n = new Nodo("Thermoplasmata", "Clase", "Thermoplasmatota");
-	g.addNode(n);
-	generarGrafoThermoplasmata();
-	n = new Nodo("Poseidoniia", "Clase", "Thermoplasmatota");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata
     private void generarGrafoThermoplasmata() {
 	Nodo n;
@@ -600,35 +539,6 @@ public class Cytota {
 	g.addNode(n);
 	n = new Nodo("Thermoplasma volcanium", "Especie", "Thermoplasma");
 	g.addNode(n);
-    }
-
-    // CYTOTA>Archaea>Euryarchaeota>Halobacteriota
-    private void generarGrafoHalobacteriota() {
-	Nodo n;
-	n = new Nodo("Archaeoglobi", "Clase", "Halobacteriota");
-	g.addNode(n);
-	generarGrafoArchaeoglobi();
-	n = new Nodo("Haloarchaea", "Clase", "Halobacteriota");
-	g.addNode(n);
-	generarGrafoHaloarchaea();
-	n = new Nodo("Methanomicrobia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoMethanomicrobia();
-	n = new Nodo("Methanocellia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoMethanocellia();
-	n = new Nodo("Methanoliparia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoMethanoliparia();
-	n = new Nodo("Methanosarcinia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoMethanosarcinia();
-	n = new Nodo("Methanonatronarchaeia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoMethanonatronarchaeia();
-	n = new Nodo("Syntropharchaeia", "Clase", "Halobacteriota");
-	g.addNode(n);
-	// TODO generarGrafoSyntropharchaeia();
     }
 
     // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi
