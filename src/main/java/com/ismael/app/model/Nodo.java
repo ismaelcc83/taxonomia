@@ -2,14 +2,14 @@ package com.ismael.app.model;
 
 public class Nodo {
     private String nomenclatura;
-    private String categoria;
+    private int categoria;
     private String nodoPadre;
 
     public Nodo(String nomenclatura) {
 	this.nomenclatura = nomenclatura;
     }
 
-    public Nodo(String nomenclatura, String categoria, String nodoPadre) {
+    public Nodo(String nomenclatura, int categoria, String nodoPadre) {
 	this.nomenclatura = nomenclatura;
 	this.setCategoria(categoria);
 	this.setNodoPadre(nodoPadre);
@@ -28,11 +28,11 @@ public class Nodo {
 	return "[nomenclatura=" + nomenclatura + "]";
     }
 
-    public String getCategoria() {
+    public int getCategoria() {
 	return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(int categoria) {
 	this.categoria = categoria;
     }
 

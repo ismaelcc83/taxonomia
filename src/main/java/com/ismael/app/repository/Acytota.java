@@ -1,5 +1,7 @@
 package com.ismael.app.repository;
 
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 
 import com.ismael.app.model.Grafo;
@@ -10,23 +12,19 @@ public class Acytota {
 
     private Grafo g;
 
-    public Grafo generarGrafo() {
+    public Grafo generarGrafo(List<String> names, int categoria, String padre) {
 	g = new Grafo();
 	Nodo n;
-	n = new Nodo("Viroidia", "Dominio", "Acytota");
-	g.addNode(n);
+	for (String name : names) {
+	    n = new Nodo(name, categoria, padre);
+	    g.addNode(n);
+	    generarGrafo(names, categoria + 1, name);
+	}
+
 	generarGrafoViroidia();
-	n = new Nodo("Ribozyviria", "Dominio", "Acytota");
-	g.addNode(n);
 	generarGrafoRibozyviria();
-	n = new Nodo("Virus", "Dominio", "Acytota");
-	g.addNode(n);
 	generarGrafoVirus();
-	n = new Nodo("Plásmido", "Dominio", "Acytota");
-	g.addNode(n);
 	generarGrafoPlasmido();
-	n = new Nodo("Replicadores del mundo de ARN", "Dominio", "Acytota");
-	g.addNode(n);
 	generarGrafoReplicadores();
 	return g;
     }
