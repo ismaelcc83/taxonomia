@@ -9,6 +9,7 @@ public final class Constants {
     };
 
     // Listas
+    public static final String[] Name = { "", "" };
     public static final String[] Biota = { "Cytota", "Acytota" };
     public static final String[] Cytota = { "Archaea", "Bacteria", "Eukaryota", "Protobionte" };
     public static final String[] Acytota = { "Viroidia", "Ribozyviria", "Virus", "Plásmido",
@@ -18,6 +19,19 @@ public final class Constants {
 	    "Methanococci", "Methanobacteria", "Thermoplasmata", "Poseidoniia", "Archaeoglobi", "Haloarchaea",
 	    "Methanomicrobia", "Methanocellia", "Methanoliparia", "Methanosarcinia", "Methanonatronarchaeia",
 	    "Syntropharchaeia", "Syntropharchaeia" };
+    public static final String[] Thermococci = { "Thermococcales", "Methanofastidiosales" };
+    public static final String[] Thermococcales = { "Thermococcaceae" };
+    public static final String[] Thermococcaceae = { "Palaeococcus", "Pyrococcus", "Thermococcus" };
+    public static final String[] Palaeococcus = { "Palaeococcus ferrophilus" };
+    public static final String[] Pyrococcus = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
 
     // Categorias
     public static final int INICIO = 0;
