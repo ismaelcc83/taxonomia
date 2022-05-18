@@ -33,45 +33,9 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci
-    private void generarGrafoThermococci() {
-	Nodo n;
-	n = new Nodo("Thermococcales", "Orden", "Thermococci");
-	g.addNode(n);
-	generarGrafoThermococcales();
-	n = new Nodo("Methanofastidiosales", "Orden", "Thermococci");
-	g.addNode(n);
-	generarGrafoMethanofastidiosales();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales
-    private void generarGrafoThermococcales() {
-	Nodo n;
-	n = new Nodo("Thermococcaceae", "Familia", "Thermococcales");
-	g.addNode(n);
-	generarGrafoThermococcaceae();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae
-    private void generarGrafoThermococcaceae() {
-	Nodo n;
-	n = new Nodo("Palaeococcus", "Genero", "Thermococcaceae");
-	g.addNode(n);
-	generarGrafoPalaeococcus();
-	n = new Nodo("Pyrococcus", "Genero", "Thermococcaceae");
-	g.addNode(n);
-	generarGrafoPyrococcus();
-	n = new Nodo("Thermococcus", "Genero", "Thermococcaceae");
-	g.addNode(n);
-	generarGrafoThermococcus();
-    }
-
-    // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Pyrococcus
-    private void generarGrafoPalaeococcus() {
-	Nodo n;
-	n = new Nodo("Palaeococcus ferrophilus", "Especie", "Palaeococcus");
-	g.addNode(n);
-    }
-
+    // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Palaeococcus
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Pyrococcus
     private void generarGrafoPyrococcus() {
 	Nodo n;
