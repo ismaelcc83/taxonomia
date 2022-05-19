@@ -23,14 +23,24 @@ public final class Constants {
     public static final String[] Thermococcales = { "Thermococcaceae" };
     public static final String[] Thermococcaceae = { "Palaeococcus", "Pyrococcus", "Thermococcus" };
     public static final String[] Palaeococcus = { "Palaeococcus ferrophilus" };
-    public static final String[] Pyrococcus = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
+    public static final String[] Pyrococcus = { "Pyrococcus abyssi", "Pyrococcus endeavori", "Pyrococcus furiosus",
+	    "Pyrococcus glycovorans", "Pyrococcus horikoshii", "Pyrococcus woesei", "Pyrococcus sp. 121",
+	    "Pyrococcus sp. 303", "Pyrococcus sp. 304" };
+    public static final String[] Thermococcus = { "Thermococcus acidaminovorans", "Thermococcus aegaeus",
+	    "Thermococcus aggregans", "Thermococcus alcaliphilus", "Thermococcus atlanticus", "Thermococcus barophilus",
+	    "Thermococcus barossii", "Thermococcus celer", "Thermococcus chitonophagus", "Thermococcus coalescens",
+	    "Thermococcus fumicolans", "Thermococcus gammatolerans", "Thermococcus gorgonarius",
+	    "Thermococcus guaymasensis", "Thermococcus hydrothermalis", "Thermococcus kodakarensis",
+	    "Thermococcus litoralis", "Thermococcus marinus", "Thermococcus mexicalis", "Thermococcus pacificus",
+	    "Thermococcus peptonophilus", "Thermococcus profundus", "Thermococcus radiotolerans",
+	    "Thermococcus sibiricus", "Thermococcus siculi", "Thermococcus stetteri", "Thermococcus waimanguensis",
+	    "Thermococcus waiotapuensis", "Thermococcus zilligii" };
+    public static final String[] Methanofastidiosales = { "Methanofastidiosum" };
+    public static final String[] Methanofastidiosum = { "Methanofastidiosum methylthiophilus" };
+    public static final String[] Methanopyri = { "Methanopyrales" };
+    public static final String[] Methanopyrales = { "Methanopyraceae" };
+    public static final String[] Methanopyraceae = { "Methanopyrus" };
+    public static final String[] Methanopyrus = { "Methanopyrus kandleri" };
     public static final String[] Name = { "", "" };
 
     // Categorias
