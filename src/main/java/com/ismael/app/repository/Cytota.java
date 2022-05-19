@@ -37,136 +37,13 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Palaeococcus
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Pyrococcus
-    private void generarGrafoPyrococcus() {
-	Nodo n;
-	n = new Nodo("Pyrococcus abyssi", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus endeavori", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus furiosus", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus glycovorans", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus horikoshii", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus woesei", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus sp. 121", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus sp. 303", "Especie", "Pyrococcus");
-	g.addNode(n);
-	n = new Nodo("Pyrococcus sp. 304", "Especie", "Pyrococcus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Thermococcales>Thermococcaceae>Thermococcus
-    private void generarGrafoThermococcus() {
-	Nodo n;
-	n = new Nodo("Thermococcus acidaminovorans", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus aegaeus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus aggregans", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus alcaliphilus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus atlanticus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus barophilus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus barossii", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus celer", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus chitonophagus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus coalescens", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus fumicolans", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus gammatolerans", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus gorgonarius", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus guaymasensis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus hydrothermalis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus kodakarensis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus litoralis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus marinus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus mexicalis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus pacificus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus peptonophilus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus profundus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus radiotolerans", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus sibiricus", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus siculi", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus stetteri", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus waimanguensis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus waiotapuensis", "Especie", "Thermococcus");
-	g.addNode(n);
-	n = new Nodo("Thermococcus zilligii", "Especie", "Thermococcus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Methanofastidiosales
-    private void generarGrafoMethanofastidiosales() {
-	Nodo n;
-	n = new Nodo("Methanofastidiosum", "Genero", "Methanofastidiosales");
-	g.addNode(n);
-	generarGrafoMethanofastidiosum();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Thermococci>Methanofastidiosales>Methanofastidiosum
-    private void generarGrafoMethanofastidiosum() {
-	Nodo n;
-	n = new Nodo("Methanofastidiosum methylthiophilus", "Especie", "Methanofastidiosum");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri
-    private void generarGrafoMethanopyri() {
-	Nodo n;
-	n = new Nodo("Methanopyrales", "Orden", "Methanopyri");
-	g.addNode(n);
-	generarGrafoMethanopyrales();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales
-    private void generarGrafoMethanopyrales() {
-	Nodo n;
-	n = new Nodo("Methanopyraceae", "Familia", "Methanopyrales");
-	g.addNode(n);
-	generarGrafoMethanopyraceae();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales>Methanopyraceae
-    private void generarGrafoMethanopyraceae() {
-	Nodo n;
-	n = new Nodo("Methanopyrus", "Genero", "Methanopyraceae");
-	g.addNode(n);
-	generarGrafoMethanopyrus();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales>Methanopyraceae>Methanopyrus
-    private void generarGrafoMethanopyrus() {
-	Nodo n;
-	n = new Nodo("Methanopyrus kandleri", "Especie", "Methanopyrus");
-	g.addNode(n);
-    }
 
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci
     private void generarGrafoMethanococci() {
