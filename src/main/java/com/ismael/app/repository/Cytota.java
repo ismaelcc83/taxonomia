@@ -46,91 +46,13 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales>Methanopyraceae>Methanopyrus
 
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci
-    private void generarGrafoMethanococci() {
-	Nodo n;
-	n = new Nodo("Methanococcales", "Orden", "Methanococci");
-	g.addNode(n);
-	generarGrafoMethanococcales();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales
-    private void generarGrafoMethanococcales() {
-	Nodo n;
-	n = new Nodo("Methanocaldococcaceae", "Familia", "Methanococcales");
-	g.addNode(n);
-	generarGrafoMethanocaldococcaceae();
-	n = new Nodo("Methanococcaceae", "Familia", "Methanococcales");
-	g.addNode(n);
-	generarGrafoMethanococcaceae();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanocaldococcaceae
-    private void generarGrafoMethanocaldococcaceae() {
-	Nodo n;
-	n = new Nodo("Methanocaldococcus", "Genero", "Methanocaldococcaceae");
-	g.addNode(n);
-	generarGrafoMethanocaldococcus();
-	n = new Nodo("Methanotorris", "Genero", "Methanocaldococcaceae");
-	g.addNode(n);
-	generarGrafoMethanotorris();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanocaldococcaceae>Methanocaldococcus
-    private void generarGrafoMethanocaldococcus() {
-	Nodo n;
-	n = new Nodo("Methanocaldococcus fervens", "Especie", "Methanocaldococcus");
-	g.addNode(n);
-	n = new Nodo("Methanocaldococcus indicus", "Especie", "Methanocaldococcus");
-	g.addNode(n);
-	n = new Nodo("Methanocaldococcus infernus", "Especie", "Methanocaldococcus");
-	g.addNode(n);
-	n = new Nodo("Methanocaldococcus jannaschii", "Especie", "Methanocaldococcus");
-	g.addNode(n);
-	n = new Nodo("Methanocaldococcus vulcanius", "Especie", "Methanocaldococcus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanocaldococcaceae>Methanotorris
-    private void generarGrafoMethanotorris() {
-	Nodo n;
-	n = new Nodo("Methanotorris formicicus", "Especie", "Methanotorris");
-	g.addNode(n);
-	n = new Nodo("Methanotorris igneus", "Especie", "Methanotorris");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae
-    private void generarGrafoMethanococcaceae() {
-	Nodo n;
-	n = new Nodo("Methanococcus", "Genero", "Methanococcaceae");
-	g.addNode(n);
-	generarGrafoMethanococcus();
-	n = new Nodo("Methanothermococcus", "Genero", "Methanococcaceae");
-	g.addNode(n);
-	generarGrafoMethanothermococcus();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae>Methanococcus
-    private void generarGrafoMethanococcus() {
-	Nodo n;
-	n = new Nodo("Methanococcus aeolicus", "Especie", "Methanococcus");
-	g.addNode(n);
-	n = new Nodo("Methanococcus maripaludis", "Especie", "Methanococcus");
-	g.addNode(n);
-	n = new Nodo("Methanococcus annielii", "Especie", "Methanococcus");
-	g.addNode(n);
-	n = new Nodo("Methanococcus voltae", "Especie", "Methanococcus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae>Methanothermococcus
-    private void generarGrafoMethanothermococcus() {
-	Nodo n;
-	n = new Nodo("Methanothermococcus okinawensis", "Especie", "Methanothermococcus");
-	g.addNode(n);
-	n = new Nodo("Methanothermococcus thermolithotrophicus", "Especie", "Methanothermococcus");
-	g.addNode(n);
-    }
 
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria
     private void generarGrafoMethanobacteria() {
