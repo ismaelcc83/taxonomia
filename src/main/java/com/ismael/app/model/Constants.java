@@ -41,6 +41,23 @@ public final class Constants {
     public static final String[] Methanopyrales = { "Methanopyraceae" };
     public static final String[] Methanopyraceae = { "Methanopyrus" };
     public static final String[] Methanopyrus = { "Methanopyrus kandleri" };
+    public static final String[] Methanococci = { "Methanococcales" };
+    public static final String[] Methanococcales = { "Methanocaldococcaceae", "Methanococcaceae" };
+    public static final String[] Methanocaldococcaceae = { "Methanocaldococcus", "Methanotorris" };
+    public static final String[] Methanocaldococcus = { "Methanocaldococcus fervens", "Methanocaldococcus indicus",
+	    "Methanocaldococcus infernus", "Methanocaldococcus jannaschii", "Methanocaldococcus vulcanius" };
+    public static final String[] Methanotorris = { "Methanotorris formicicus", "Methanotorris igneus" };
+    public static final String[] Methanococcaceae = { "Methanococcus", "Methanothermococcus" };
+    public static final String[] Methanococcus = { "Methanococcus aeolicus", "Methanococcus maripaludis",
+	    "Methanococcus annielii", "Methanococcus voltae" };
+    public static final String[] Methanothermococcus = { "Methanothermococcus okinawensis",
+	    "Methanothermococcus thermolithotrophicus" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
+    public static final String[] Name = { "", "" };
     public static final String[] Name = { "", "" };
 
     // Categorias
