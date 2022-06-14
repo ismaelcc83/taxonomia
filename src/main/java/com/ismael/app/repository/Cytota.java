@@ -44,7 +44,6 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales>Methanopyraceae
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanopyri>Methanopyrales>Methanopyraceae>Methanopyrus
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanocaldococcaceae
@@ -55,152 +54,14 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae>Methanothermococcus
 
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria
-    private void generarGrafoMethanobacteria() {
-	Nodo n;
-	n = new Nodo("Methanobacteriales", "Orden", "Methanobacteria");
-	g.addNode(n);
-	generarGrafoMethanobacteriales();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales
-    private void generarGrafoMethanobacteriales() {
-	Nodo n;
-	n = new Nodo("Methanobacteriaceae", "Familia", "Methanobacteriales");
-	g.addNode(n);
-	generarGrafoMethanobacteriaceae();
-	n = new Nodo("Methanothermaceae", "Familia", "Methanobacteriales");
-	g.addNode(n);
-	generarGrafoMethanothermaceae();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanobacteriaceae
-    private void generarGrafoMethanobacteriaceae() {
-	Nodo n;
-	n = new Nodo("Methanobacterium", "Genero", "Methanobacteriaceae");
-	g.addNode(n);
-	generarGrafoMethanobacterium();
-	n = new Nodo("Methanobrevibacter", "Genero", "Methanobacteriaceae");
-	g.addNode(n);
-	generarGrafoMethanobrevibacter();
-	n = new Nodo("Methanosphaera", "Genero", "Methanobacteriaceae");
-	g.addNode(n);
-	generarGrafoMethanosphaera();
-	n = new Nodo("Methanothermobacter", "Genero", "Methanobacteriaceae");
-	g.addNode(n);
-	generarGrafoMethanothermobacter();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanobacterium
-    private void generarGrafoMethanobacterium() {
-	Nodo n;
-	n = new Nodo("Methanobacterium aarhusense", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium alcaliphilum", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium beijingense", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium bryantii", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium congolense", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium curvum", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium espanolae", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium formicicum", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium ivanovii", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium oryzae", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium palustre", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium subterraneum", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium thermaggregans", "Especie", "Methanobacterium");
-	g.addNode(n);
-	n = new Nodo("Methanobacterium uliginosum", "Especie", "Methanobacterium");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanobrevibacter
-    private void generarGrafoMethanobrevibacter() {
-	Nodo n;
-	n = new Nodo("Methanobrevibacter acididurans", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter arboriphilus", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter curvatus", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter cuticularis", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter filiformis", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter gottschalkii", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter millerae", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter olleyae", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter oralis", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter ruminantium", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter smithii", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter thaueri", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter woesei", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-	n = new Nodo("Methanobrevibacter wolinii", "Especie", "Methanobrevibacter");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanosphaera
-    private void generarGrafoMethanosphaera() {
-	Nodo n;
-	n = new Nodo("Methanosphaera cuniculi", "Especie", "Methanosphaera");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera stadtmaniae", "Especie", "Methanosphaera");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanothermobacter
-    private void generarGrafoMethanothermobacter() {
-	Nodo n;
-	n = new Nodo("Methanosphaera defluvii", "Especie", "Methanothermobacter");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera marburgensis", "Especie", "Methanothermobacter");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera thermautotrophicus", "Especie", "Methanothermobacter");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera thermoflexus", "Especie", "Methanothermobacter");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera thermophilus", "Especie", "Methanothermobacter");
-	g.addNode(n);
-	n = new Nodo("Methanosphaera wolfeii", "Especie", "Methanothermobacter");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanothermaceae
-    private void generarGrafoMethanothermaceae() {
-	Nodo n;
-	n = new Nodo("Methanothermus", "Genero", "Methanothermaceae");
-	g.addNode(n);
-	generarGrafoMethanothermus();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanothermaceae>Methanothermus
-    private void generarGrafoMethanothermus() {
-	Nodo n;
-	n = new Nodo("Methanothermus fervidus", "Especie", "Methanothermus");
-	g.addNode(n);
-	n = new Nodo("Methanothermus jannaschii", "Especie", "Methanothermus");
-	g.addNode(n);
-	n = new Nodo("Methanothermus sociabilis", "Especie", "Methanothermus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata
     private void generarGrafoThermoplasmata() {
 	Nodo n;

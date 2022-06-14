@@ -9,7 +9,6 @@ public final class Constants {
     };
 
     // Listas
-    public static final String[] Name = { "", "" };
     public static final String[] Biota = { "Cytota", "Acytota" };
     public static final String[] Cytota = { "Archaea", "Bacteria", "Eukaryota", "Protobionte" };
     public static final String[] Acytota = { "Viroidia", "Ribozyviria", "Virus", "Plásmido",
@@ -52,13 +51,29 @@ public final class Constants {
 	    "Methanococcus annielii", "Methanococcus voltae" };
     public static final String[] Methanothermococcus = { "Methanothermococcus okinawensis",
 	    "Methanothermococcus thermolithotrophicus" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
-    public static final String[] Name = { "", "" };
+    public static final String[] Methanobacteria = { "Methanobacteriales" };
+    public static final String[] Methanobacteriales = { "Methanobacteriaceae", "Methanothermaceae" };
+    public static final String[] Methanobacteriaceae = { "Methanobacterium", "Methanobrevibacter", "Methanosphaera",
+	    "Methanothermobacter" };
+    public static final String[] Methanobacterium = { "Methanobacterium aarhusense", "Methanobacterium alcaliphilum",
+	    "Methanobacterium beijingense", "Methanobacterium bryantii", "Methanobacterium congolense",
+	    "Methanobacterium curvum", "Methanobacterium espanolae", "Methanobacterium formicicum",
+	    "Methanobacterium ivanovii", "Methanobacterium oryzae", "Methanobacterium palustre",
+	    "Methanobacterium subterraneum", "Methanobacterium thermaggregans", "Methanobacterium uliginosum" };
+    public static final String[] Methanobrevibacter = { "Methanobrevibacter acididurans",
+	    "Methanobrevibacter arboriphilus", "Methanobrevibacter curvatus", "Methanobrevibacter cuticularis",
+	    "Methanobrevibacter filiformis", "Methanobrevibacter gottschalkii", "Methanobrevibacter millerae",
+	    "Methanobrevibacter olleyae", "Methanobrevibacter oralis", "Methanobrevibacter ruminantium",
+	    "Methanobrevibacter smithii", "Methanobrevibacter thaueri", "Methanobrevibacter woesei",
+	    "Methanobrevibacter wolinii" };
+    public static final String[] Methanosphaera = { "Methanosphaera cuniculi", "Methanosphaera stadtmaniae" };
+    public static final String[] Methanothermobacter = { "Methanosphaera defluvii", "Methanosphaera marburgensis",
+	    "Methanosphaera thermautotrophicus", "Methanosphaera thermoflexus", "Methanosphaera thermophilus",
+	    "Methanosphaera wolfeii" };
+    public static final String[] Methanothermaceae = { "Methanothermus" };
+    public static final String[] Methanothermus = { "Methanothermus fervidus", "Methanothermus jannaschii",
+	    "Methanothermus sociabilis" };
+    // public static final String[] Name = { "", "" };
 
     // Categorias
     public static final int INICIO = 0;
