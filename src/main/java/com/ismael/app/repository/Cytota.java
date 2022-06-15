@@ -52,7 +52,6 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae>Methanococcus
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanococci>Methanococcales>Methanococcaceae>Methanothermococcus
-
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanobacteriaceae
@@ -63,108 +62,16 @@ public class Cytota {
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanothermaceae
     // CYTOTA>Archaea>Euryarchaeota>Methanobacteriota>Methanobacteria>Methanobacteriales>Methanothermaceae>Methanothermus
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata
-    private void generarGrafoThermoplasmata() {
-	Nodo n;
-	n = new Nodo("Aciduliprofundales", "Orden", "Thermoplasmata");
-	g.addNode(n);
-	generarGrafoAciduliprofundales();
-	n = new Nodo("Thermoplasmatales", "Orden", "Thermoplasmata");
-	g.addNode(n);
-	generarGrafoThermoplasmatales();
-	n = new Nodo("Methanomassiliicoccales", "Orden", "Thermoplasmata");
-	g.addNode(n);
-	generarGrafoMethanomassiliicoccales();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Aciduliprofundales
-    private void generarGrafoAciduliprofundales() {
-	Nodo n;
-	n = new Nodo("Aciduliprofundaceae", "Familia", "Aciduliprofundales");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Methanomassiliicoccales
-    private void generarGrafoMethanomassiliicoccales() {
-	Nodo n;
-	n = new Nodo("Methanomassiliicoccaceae", "Familia", "Methanomassiliicoccales");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales
-    private void generarGrafoThermoplasmatales() {
-	Nodo n;
-	n = new Nodo("Cuniculiplasmataceae", "Familia", "Thermoplasmatales");
-	g.addNode(n);
-	n = new Nodo("Ferroplasmaceae", "Familia", "Thermoplasmatales");
-	g.addNode(n);
-	generarGrafoFerroplasmaceae();
-	n = new Nodo("Picrophilaceae", "Familia", "Thermoplasmatales"); //
-	g.addNode(n);
-	generarGrafoPicrophilaceae();
-	n = new Nodo("Thermoplasmataceae", "Familia", "Thermoplasmatales");
-	g.addNode(n);
-	generarGrafoThermoplasmataceae();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Ferroplasmaceae
-    private void generarGrafoFerroplasmaceae() {
-	Nodo n;
-	n = new Nodo("Ferroplasma", "Genero", "Ferroplasmaceae");
-	g.addNode(n);
-	generarGrafoFerroplasma();
-	n = new Nodo("Acidiplasma", "Genero", "Ferroplasmaceae");
-	g.addNode(n);
-	generarGrafoAcidiplasma();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Ferroplasmaceae>Ferroplasma
-    private void generarGrafoFerroplasma() {
-	Nodo n;
-	n = new Nodo("Ferroplasma acidophilum", "Especie", "Ferroplasma");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Ferroplasmaceae>Acidiplasma
-    private void generarGrafoAcidiplasma() {
-	Nodo n;
-	n = new Nodo("Acidiplasma aeolicum ", "Especie", "Acidiplasma");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Picrophilaceae
-    private void generarGrafoPicrophilaceae() {
-	Nodo n;
-	n = new Nodo("Picrophilus", "Genero", "Picrophilaceae");
-	g.addNode(n);
-	generarGrafoPicrophilus();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Picrophilaceae>Picrophilus
-    private void generarGrafoPicrophilus() {
-	Nodo n;
-	n = new Nodo("Picrophilus oshimae", "Especie", "Picrophilus");
-	g.addNode(n);
-	n = new Nodo("Picrophilus torridus", "Especie", "Picrophilus");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Thermoplasmataceae
-    private void generarGrafoThermoplasmataceae() {
-	Nodo n;
-	n = new Nodo("Thermoplasma", "Genero", "Thermoplasmataceae");
-	g.addNode(n);
-	generarGrafoThermoplasma();
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Thermoplasmatota>Thermoplasmata>Thermoplasmatales>Thermoplasmataceae>Thermoplasma
-    private void generarGrafoThermoplasma() {
-	Nodo n;
-	n = new Nodo("Thermoplasma acidophilum", "Especie", "Thermoplasma");
-	g.addNode(n);
-	n = new Nodo("Thermoplasma volcanium", "Especie", "Thermoplasma");
-	g.addNode(n);
-    }
-
     // CYTOTA>Archaea>Euryarchaeota>Archaeoglobi
     private void generarGrafoArchaeoglobi() {
 	Nodo n;
