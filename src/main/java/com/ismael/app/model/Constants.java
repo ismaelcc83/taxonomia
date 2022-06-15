@@ -73,6 +73,19 @@ public final class Constants {
     public static final String[] Methanothermaceae = { "Methanothermus" };
     public static final String[] Methanothermus = { "Methanothermus fervidus", "Methanothermus jannaschii",
 	    "Methanothermus sociabilis" };
+    public static final String[] Thermoplasmata = { "Aciduliprofundales", "Thermoplasmatales",
+	    "Methanomassiliicoccales" };
+    public static final String[] Aciduliprofundales = { "Aciduliprofundaceae" };
+    public static final String[] Methanomassiliicoccales = { "Methanomassiliicoccaceae" };
+    public static final String[] Thermoplasmatales = { "Cuniculiplasmataceae", "Ferroplasmaceae", "Picrophilaceae",
+	    "Thermoplasmataceae" };
+    public static final String[] Ferroplasmaceae = { "Ferroplasma", "Acidiplasma" };
+    public static final String[] Ferroplasma = { "Ferroplasma acidophilum" };
+    public static final String[] Acidiplasma = { "Acidiplasma aeolicum" };
+    public static final String[] Picrophilaceae = { "Picrophilus" };
+    public static final String[] Picrophilus = { "Picrophilus oshimae", "Picrophilus torridus" };
+    public static final String[] Thermoplasmataceae = { "Thermoplasma" };
+    public static final String[] Thermoplasma = { "Thermoplasma acidophilum", "Thermoplasma volcanium" };
     // public static final String[] Name = { "", "" };
 
     // Categorias
